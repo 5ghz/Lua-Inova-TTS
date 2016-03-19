@@ -1,3 +1,6 @@
+#MIT License
+#Author: pershin87@yandex.ru
+
 #!/usr/bin/lua
 
 local io = require("io")
@@ -21,7 +24,6 @@ contenttype = 'application/json'
 date = os.date('!%Y%m%d')
 time = os.date('!%H%M%S')
 cryptomethod = 'AWS4-HMAC-SHA256'
---text = 'Hello world'
 inputtype='text/plain'
 outcodec='MP3'
 outsamplerate=22050
@@ -29,9 +31,6 @@ prate =  'medium'
 pvolume = 'medium'
 psentencebreak = 400
 pparagraphbreak = 650
---voicename = 'Salli'
---voicelang = 'en-US'
---voicegender = 'Female'
 host = service .. '.' .. region  .. '.ivonacloud.com'
 
 function dump(...)
@@ -49,7 +48,6 @@ function tts(voicelang,voicename,voicegender,text,filename)
   local datapayload = {
       Input = {
                  Data = text
-               -- Type = inputtype
       },
       OutputFormat = {
                  Codec = outcodec,
