@@ -1,6 +1,6 @@
-#MIT License
+#License MIT
 #Author: pershin87@yandex.ru
-
+>>>>>>> eb637f82e5f8d1241dbbd2a3bc6a65d2e0325582
 #!/usr/bin/lua
 
 local io = require("io")
