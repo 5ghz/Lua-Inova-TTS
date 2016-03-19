@@ -1,3 +1,5 @@
+#License MIT
+#Author: pershin87@yandex.ru
 #!/usr/bin/lua
 
 local io = require("io")
